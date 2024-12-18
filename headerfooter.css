@@ -1,0 +1,494 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+header h1.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #333;
+
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+nav ul li a.Reservation-Button {
+    background-color: #e74c3c;
+    /* Bright orange for visibility */
+    color: #fff;
+    /* White text for contrast */
+    font-weight: bold;
+    /* Bold text */
+    padding: 12px 20px;
+    /* More padding for emphasis */
+    border-radius: 50px;
+    /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow */
+
+    cursor: pointer;
+
+}
+
+nav ul li a.Reservation-Button:hover {
+    background-color: #cc3700;
+    /* Darker shade for hover effect */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    /* More shadow on hover */
+    transform: translateY(-3px);
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
+    /* Space between items */
+}
+
+.nav-container {
+    flex-grow: inherit;
+}
+
+.nav-left li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 700;
+    font-weight: 500;
+}
+
+.nav-right {
+
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 10px;
+    /* Space between icons */
+}
+
+/* Icons Styling */
+.nav-right li a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+.nav-right li a .icon {
+    width: 20px;
+    /* Icon size */
+    height: 20px;
+}
+
+/* Shopping Cart Alignment */
+.nav-right li:last-child a {
+    margin-right: 0;
+    margin-left: auto;
+    /* Push to the far right */
+}
+
+nav ul.nav-right li a .quantity {
+    position: absolute;
+    top: -5px;
+    /* Adjust to align the badge */
+    right: -10px;
+    /* Adjust to align the badge */
+    background-color: #e74c3c;
+    /* Bright red for visibility */
+    color: #fff;
+    /* White text for contrast */
+    font-size: 0.4rem;
+    /* Smaller font size for the badge */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    border-radius: 50%;
+    /* Make it a circle */
+    padding: 2px 6px;
+    /* Adjust padding for size */
+    min-width: 18px;
+    /* Ensures a circle shape for single-digit numbers */
+    text-align: center;
+    /* Center the number inside the circle */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+
+}
+
+/* Footer styles */
+/* Footer General Styles */
+footer {
+    background-color: #fdf7f4;
+    /* Light gray background */
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    /* Divider between top and bottom */
+}
+
+.footer-column {
+    flex: 1;
+    /* Equal column widths */
+    margin: 0 15px;
+}
+
+.footer-column:first-child {
+    margin-top: 75px;
+    margin-left: 220px;
+    /* Shift left column to the right */
+}
+
+.footer-column:last-child {
+    margin-top: 75px;
+    margin-left: 100px;
+    /* Shift right column to the left */
+}
+
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #e74c3c;
+    /* Highlight on hover */
+}
+
+/* Center Column with Logo */
+.center-column {
+    text-align: center;
+    margin-right: 100px;
+}
+
+.footer-logo {
+    width: 150px;
+    /* Adjust logo size */
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #c9ad89;
+    /* Slightly darker background */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+
+/* Centering the login container */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f9f9f9;
+}
+
+.login-container {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background: #fff;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 350px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #0079d6;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #cc3700;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider p {
+    display: inline-block;
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    color: #666;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    z-index: 0;
+}
+
+/* Social Media Icons */
+.social-login a {
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.social-login a:hover {
+    transform: scale(1.2);
+}
+
+.categories-fonts {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px
+}
+
+.price-font {
+    font-weight: normal;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px
+}
+
+.name-of-meal-font {
+
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+.price-btn {
+    text-align: justify;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.price-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+.dessertprice-btn {
+    text-align: justify;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.dessertprice-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+.scroll-btn {
+    position: absolute;
+    right: 10px;
+    display: inline;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-btn:hover {
+    background-color: black;
+    transform: translateY(-3px);
+}

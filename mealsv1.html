@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal-Delicious Bites Restaurant</title>
+  <link rel="stylesheet" href="headerfooter.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"      />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    table {
+      margin-bottom: 3rem;
+      width: 70%;
+      table-layout: fixed;
+      /* columns are the same width */
+      border-collapse: collapse;
+      /* Makes the borders collapse into a single border */
+    }
+
+    td {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      /* Adds space inside the cells */
+      text-align: center;
+      height: auto;
+      /* Ensures all rows have the same height */
+    }
+
+    td div p {
+      text-align: justify;
+      text-justify: inter-word;
+      /*Adjust spaces between words*/
+      text-align: center;
+
+    }
+
+    td img {
+      padding-top: 25px;
+      /*space between head and img*/
+      text-align: center;
+      width: 220px;
+      height: 250px;
+      border-radius: 15%;
+    }
+
+
+    @media screen and (max-width:1067px) {
+
+      td img {
+        padding-top: 80px;
+        text-align: center;
+        width: 150px;
+        height: 250px;
+
+      }
+    }
+
+    @media screen and (min-width: 676px) and (max-width: 939px) {
+
+      td img {
+
+        text-align: center;
+        width: 150px;
+        height: 300px;
+
+      }
+
+      .price-font {
+        text-align: justify;
+        text-justify: inter-word;
+        /*Adjust spaces between words*/
+        font-size: 10px
+      }
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><i class="fa-solid fa-utensils fa-flip"></i> Delicious Bites</h1>
+    <nav class="nav-container">
+      <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categoryv1.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservations.html" class="Reservation-Button">Reservation</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span class="quantity">2</span></a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <center>
+      <p class="categories-fonts" style="padding-top:120px;">Meals Menu</p>
+    </center>
+
+    <center>
+      <h2>
+        <table>
+          <tr align="center" valign="middle">
+            <td> <img src="pictures\meals\Chicken and Avocado Burritos.png" alt="Chicken and Avocado Burritos">
+            </td>
+            <td> <img src="pictures\meals\chicken lemon.png" alt="chicken lemon">
+            </td>
+            <td> <img src="pictures\meals\chicken alfredo.png" alt="chicken alfredo">
+            </td>
+          </tr>
+
+          <tr valign="top">
+            <td>
+              <p class="name-of-meal-font">Avocado bagel sandwich</p>
+              <p class="price-font" style="text-align: justify;text-justify: inter-word;">Burritos stuffed with juicy
+                chicken,cool and creamy avocad,oozy gooey melted cheese,spicy salsa verde and sour cream.</p>
+            </td>
+            <td>
+              <p class="name-of-meal-font">Lemon Chicken Plate</p>
+              <p class="price-font" style="text-align: justify;text-justify: inter-word;">Chicken breast,herbs,lemon
+                butter sauce served with white rice,crushed potatoes with parmesan cheese.</p>
+            </td>
+            <td>
+              <p class="name-of-meal-font">Arrabiata Pasta</p>
+              <p class="price-font" style="text-align: justify;text-justify: inter-word;">Creamy pasta dish made with
+                fettuccine, tender pan-seared chicken, and a smooth Alfredo sauce of butter.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="price-font" style="text-align: left;">
+                price..................................................$8.99<a href="cart.html" class="price-btn"
+                  title="Add to Cart">+</a>
+              </p>
+            </td>
+            <td>
+              <p class="price-font" style="text-align: left;">
+                price..................................................$8.99<a href="cart.html" class="price-btn"
+                  title="Add to Cart">+</a>
+              </p>
+            </td>
+            <td>
+              <p class="price-font" style="text-align: left;">
+                price..................................................$8.99<a href="cart.html" class="price-btn"
+                  title="Add to Cart">+</a>
+              </p>
+            </td>
+          </tr>
+
+
+          <tr align="center" valign="middle">
+            <td> <img src="pictures\meals\salamon.png" alt="salamon">
+            </td>
+            <td> <img src="pictures\meals\beefscalop.png" alt="beefscalop">
+            </td>
+            <td> <img src="pictures\meals\arabiata.png" alt="arabiata">
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <p class="name-of-meal-font">Salmon Steak Plate</p>
+              <p class="price-font" style="text-align: justify;text-justify: inter-word;">Grilled salmon with lemon
+                mustard dressing,butter and ginger sauce,served with freshspinach and basmati rice with saffron.</p>
+            </td>
+            <td>
+              <p class="name-of-meal-font">Beef Escalope Plate</p>
+              <p class="price-font" style="text-align: justify;text-justify: inter-word;">Marinated potato and breaded
+                beef, rocket leaves, cherry tomatoes,parmesan cheese,finished off with parmesan dressing and fried
+                potato wedges.</p>
+
+            </td>
+            <td>
+              <p class="name-of-meal-font">Chicken Alfredo</p>
+              <p class="price-font" style="text-align: justify;text-justify: inter-word;">Homemade tomato sauce with
+                red pods,topped with fried mozzarella,grated parmesan and grilled sourdough slice.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="price-font" style="text-align: left;">
+                price..................................................$8.99<a href="cart.html" class="price-btn"
+                  title="Add to Cart">+</a>
+              </p>
+            </td>
+            <td>
+              <p class="price-font" style="text-align: left;">
+                price..................................................$8.99<a href="cart.html" class="price-btn"
+                  title="Add to Cart">+</a>
+              </p>
+            </td>
+            <td>
+              <p class="price-font" style="text-align: left;">
+                price..................................................$8.99<a href="cart.html" class="price-btn"
+                  title="Add to Cart">+</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </h2>
+    </center>
+
+  </main>
+
+  <footer>
+    <!-- Top Section with 3 Colums -->
+    <div class="footer-top">
+      <!-- First Column -->
+      <div class="footer-column">
+        <h3>Customer</h3>
+        <ul>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="about.html">Meet Our Chefs</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Second Column -->
+      <div class="footer-column center-column">
+        <img src="pictures/DB2.jpg" alt="Delicious Bites Logo" class="footer-logo" title="Delicious Bites">
+        <p>BN. 2 - Mehwar Road beside Circus, October</p>
+        <p>Giza, Egypt</p>
+        <p>Hotline: <strong>19999 – 01234456781</strong></p>
+        <p>Email: <a href="DeliciousBites@example.com">info@deliciousbites.com</a></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="color: #0079d6;"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="color:red"></i></a>
+          <a href="https://x.com/"><i class="fa fa-twitter" style="color:black"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa fa-pinterest" style="color:red"></i></a>
+        </div>
+      </div>
+
+      <!-- Third Column -->
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Sunday - Thursday: <strong>09:00AM – 10:00PM</strong></li>
+          <li>Saturday: <strong>09:00AM – 11:00PM</strong></li>
+          <li>Friday: <strong>1:00PM – 12:00AM</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2024 Delicious Bites. All Rights Are Reserved. <a href="mealsv1.html" class="scroll-btn"><i
+            class="fa-solid fa-up-long fa-lg" style="color: #FFFFFF;"></i></a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

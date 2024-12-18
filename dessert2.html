@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dessert-Delicious Bites Restaurant</title>
+  <link rel="stylesheet" href="headerfooter.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"      />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    table {
+      margin-bottom: 3rem;
+      width: 70%;
+      table-layout: fixed;
+      /* columns are the same width */
+      border-collapse: collapse;
+      /* Makes the borders collapse into a single border */
+    }
+
+    td {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      /* Adds space inside the cells */
+      text-align: center;
+      height: auto;
+      /* Ensures all rows have the same height */
+    }
+
+    td div p {
+      text-align: justify;
+      text-justify: inter-word;
+      /*Adjust spaces between words*/
+      text-align: center;
+
+    }
+
+    td img {
+      padding-top: 25px;
+      /*space between head and img*/
+      text-align: center;
+      width: 220px;
+      height: 250px;
+      border-radius: 15%;
+    }
+
+
+    @media screen and (max-width:1067px) {
+
+      td img {
+        padding-top: 80px;
+        text-align: center;
+        width: 150px;
+        height: 250px;
+
+      }
+    }
+
+    @media screen and (min-width: 676px) and (max-width: 939px) {
+
+      td img {
+
+        text-align: center;
+        width: 150px;
+        height: 300px;
+
+      }
+
+      .price-font {
+        text-align: justify;
+        text-justify: inter-word;
+        /*Adjust spaces between words*/
+        font-size: 10px
+      }
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><i class="fa-solid fa-utensils fa-flip"></i> Delicious Bites</h1>
+    <nav class="nav-container">
+      <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categoryv1.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservations.html" class="Reservation-Button">Reservation</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span class="quantity">2</span></a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <center>
+      <p class="categories-fonts" style="padding-top:120px;">Dessert Menu</p>
+    </center>
+
+    <center>
+      <h2>
+        <table>
+          <tr>
+            <td> <img src="pictures\desserts\d2.png" alt="d2image">
+            </td>
+            <td> <img src="pictures\desserts\Chocolate Tiramisu.png" alt="Chocolate Tiramisuimage">
+            </td>
+            <td> <img src="pictures\desserts\Mini Cheesecakes.png" alt="Mini Cheesecakesimage">
+            </td>
+          </tr>
+
+          <tr valign="top">
+            <td>
+              <p class="name-of-meal-font">Cheesecake Crescent Rolls</p>
+            </td>
+            <td>
+              <p class="name-of-meal-font">Chocolate Tiramisu</p>
+            </td>
+            <td>
+              <p class="name-of-meal-font">Strawbery cheesecake</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <pre class="price-font" style="text-align: left;">
+      Single............................................$8.99<a href="cart.html" class="dessertprice-btn" title="Add to Cart">+</a>
+      Sharing...........................................$15</pre>
+            </td>
+            <td>
+
+              <pre class="price-font" style="text-align: left;">
+      Single............................................$8.99<a href="cart.html" class="dessertprice-btn" title="Add to Cart">+</a>
+      Sharing...........................................$15</pre>
+
+            </td>
+            <td>
+              <pre class="price-font" style="text-align: left;">
+      Single..................................................$8.99<a href="cart.html" class="dessertprice-btn" title="Add to Cart">+</a>
+      Sharing...................................................$15</pre>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td> <img src="pictures\desserts\Mini Banana cheesecake.png" alt="Mini Banana cheesecakeimage">
+            </td>
+            <td> <img src="pictures\desserts\d3.png" alt="d3image">
+            </td>
+            <td> <img src="pictures\desserts\Irresistible Peanut Butter Caramel Mini Cheesecakes.png"
+                alt="Irresistible Peanut Butter Caramel Mini Cheesecakesimage">
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <p class="name-of-meal-font">Banana cheesecake</p>
+            </td>
+            <td>
+              <p class="name-of-meal-font">Browness</p>
+            </td>
+            <td>
+              <p class="name-of-meal-font">Peanut Butter Caramel</p>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+
+              <pre class="price-font" style="text-align: left;">
+      Single..................................................$8.99<a href="cart.html" class="dessertprice-btn" title="Add to Cart">+</a>
+      Sharing...................................................$15</pre>
+
+            </td>
+            <td>
+              <pre class="price-font" style="text-align: left;">
+      Single..................................................$8.99<a href="cart.html" class="dessertprice-btn" title="Add to Cart">+</a>
+      Sharing...................................................$15</pre>
+            </td>
+            <td>
+              <pre class="price-font" style="text-align: left;">
+      Single..................................................$8.99<a href="cart.html" class="dessertprice-btn" title="Add to Cart">+</a>
+      Sharing...................................................$15</pre>
+            </td>
+          </tr>
+
+        </table>
+      </h2>
+    </center>
+
+  </main>
+
+  <footer>
+    <!-- Top Section with 3 Colums -->
+    <div class="footer-top">
+      <!-- First Column -->
+      <div class="footer-column">
+        <h3>Customer</h3>
+        <ul>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="about.html">Meet Our Chefs</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Second Column -->
+      <div class="footer-column center-column">
+        <img src="pictures/DB2.jpg" alt="Delicious Bites Logo" class="footer-logo" title="Delicious Bites">
+        <p>BN. 2 - Mehwar Road beside Circus, October</p>
+        <p>Giza, Egypt</p>
+        <p>Hotline: <strong>19999 – 01234456781</strong></p>
+        <p>Email: <a href="DeliciousBites@example.com">info@deliciousbites.com</a></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="color: #0079d6;"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="color:red"></i></a>
+          <a href="https://x.com/"><i class="fa fa-twitter" style="color:black"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa fa-pinterest" style="color:red"></i></a>
+        </div>
+      </div>
+
+      <!-- Third Column -->
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Sunday - Thursday: <strong>09:00AM – 10:00PM</strong></li>
+          <li>Saturday: <strong>09:00AM – 11:00PM</strong></li>
+          <li>Friday: <strong>1:00PM – 12:00AM</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2024 Delicious Bites. All Rights Are Reserved. <a href="dessert2.html" class="scroll-btn"><i
+            class="fa-solid fa-up-long fa-lg" style="color: #FFFFFF;"></i></a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

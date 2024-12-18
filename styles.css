@@ -1,0 +1,778 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+/* ==============================================Header========================================== */
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: nowrap;
+  /*Flex items say on single line - Default*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  /*Prioritize the stacking order - if 3 images or texts or whatever and one of them has high z-index value it will show up on top*/
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+header h1.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+nav {
+  /* Whole Navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0.5rem;
+}
+
+nav ul li a {
+  /* For nav Bar Elements */
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s ease;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+nav ul li a.Reservation-Button {
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+nav ul li a.Reservation-Button:hover {
+  background-color: #cc3700;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.nav-left {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-left li a {
+  font-size: 700;
+  font-weight: 500;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  gap: 10px;
+  /* Space between icons */
+}
+
+/* Nav right Icons Styling */
+.nav-right li a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+}
+
+.nav-right li a .icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+nav ul.nav-right li a .quantity {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 0.4rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* =======================Main content styles============================= */
+main {
+  padding-top: 80px;
+  /* To coop with fixed header/navbar */
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #34495e;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Page header with orange background === */
+.page-header {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 0.5rem 0;
+  /* 0.5 for top/bot - 0 for left/right */
+  text-align: center;
+}
+
+.page-header h2 {
+  color: #fff;
+}
+
+
+
+/* =================================Body section - Welcome to Delicious Bites Section @ Index page================== */
+.intro {
+  background-size: cover;
+  background-position: center;
+  background-image: url(/pictures/intro.jpg);
+  height: 675px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.intro h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* ======================================Button style & design===================================== */
+.btn {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+}
+
+/* ====================================About section====================================== */
+.about,
+.about-content {
+  padding: 0rem 0;
+  text-align: center;
+
+}
+
+/*about us paragraph page*/
+.about p,
+.about-content p {
+
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  /*Margins for the page paragraph and the 1rem is for the in between margins*/
+  font-size: 1.1rem;
+}
+
+.about-image {
+  margin-bottom: 2rem;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-logo {
+  display: flex;
+  /*To make the logo on most left and allow text on the right*/
+  width: 350px;
+  height: auto;
+  margin-bottom: 0;
+  border-radius: 100%;
+}
+
+.restaurant-img {
+  margin-top: 3rem;
+  width: 50%;
+}
+
+.shiftleft-c {
+  /*To adjust the ul of bulletpoints to a certain place in contact page*/
+  margin-left: 20px;
+}
+
+/* ==============================Menu section=================================== */
+.menu-section,
+.featured {
+  padding: 6.5rem 0;
+  background-size: cover;
+}
+
+.menu-grid {
+  display: grid;
+  /*To display the featured menu as grid view*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*To make them like a table format aligned together in columns responsive, repeat(count,value)*/
+  /*auto fit ensure many colums are fit in screen as possible, minmax-> min 300px & and if there is extra space columns ht expand b rate 1fr*/
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.menu-item {
+  /*Box layout for better design*/
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  /*Similar to border-radius for img*/
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+}
+
+.menu-item img {
+  /*Menu image*/
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item h3,
+.menu-item h4 {
+  /*The inside Header*/
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.menu-item p {
+  /*The inside Text*/
+  font-size: 0.9rem;
+  margin: 0 1rem 1rem;
+  color: #666;
+}
+
+#menu-btn {
+  /*Button Check Menu*/
+  padding: 0;
+  margin-left: 45%;
+  margin-top: 25px;
+}
+
+#featured-title {
+  /*Title featured dishes today*/
+  text-align: center;
+}
+
+
+/*===========================about section in index page================================*/
+
+.about-section {
+  display: flex;
+  text-align: center;
+}
+
+.about-lgo {
+  margin-top: 85px;
+  margin-left: 250px;
+  border-radius: 100%;
+}
+
+.about-txt {
+  text-align: center;
+  width: 700px;
+}
+
+.about-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* =============================Contact and Reservation form================================== */
+.contact-form,
+.reservation-form {
+  /*Forms Layouts*/
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  /*marg between elements*/
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.shiftleft-r {
+  /*For ul bulletpoints allignment*/
+  margin-left: 20px;
+}
+
+/* ===================================Reviews===================================== */
+.review-item {
+  /*El reviews nfso*/
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  /*Reviews header title*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+.reviewer {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* ======================================Location=================================== */
+.location-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.map-container {
+  height: 400px;
+  border-radius: 10px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.social-btn {
+  display: inline-block;
+  flex: 1;
+  padding: 0.5rem 0;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.social-btn.facebook {
+  background-color: #3b5998;
+}
+
+.social-btn.google {
+  background-color: #db4437;
+}
+
+.social-btn.twitter {
+  background-color: #00acee;
+}
+
+.social-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* ======================================Footer================================ */
+
+footer {
+  background-color: #fdf7f4;
+  /* bit darker white background */
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+/* Footer Top Section */
+.footer-top {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  /* Divider between top and bottom */
+}
+
+.footer-column {
+  flex: 1;
+  /* Equal column widths */
+  margin: 0 15px;
+}
+
+.footer-column:first-child {
+  margin-top: 75px;
+  margin-left: 220px;
+  /* Shift left column to the right */
+}
+
+.footer-column:last-child {
+  margin-top: 75px;
+  margin-left: 100px;
+  /* Shift right column to the left */
+}
+
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  gap: 30px;
+  margin: 0.3rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #e74c3c;
+  /* Highlight on hover */
+}
+
+/* Center Column with Logo */
+.center-column {
+  text-align: center;
+  margin-right: 100px;
+}
+
+.footer-logo {
+  width: 150px;
+  /* Adjust logo size */
+  margin-bottom: 10px;
+  border-radius: 100%;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  position: relative;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #c9ad89;
+  /* Slightly darker background */
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.scroll-btn {
+  position: absolute;
+  right: 10px;
+  display: inline;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-btn:hover {
+  background-color: black;
+  transform: translateY(-3px);
+}
+
+
+/* =======================================Login==================================== */
+.login-section {
+  /*Bg*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #f9f9f9;
+}
+
+.login-container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  background: #fff;
+  padding: 30px 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  width: 350px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #e74c3c;
+}
+
+.input-group {
+  /*for the username/password titles*/
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group input {
+  /*for the input text field*/
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 105px;
+  outline: none;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #0079d6;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #cc3700;
+}
+
+/* or login with  */
+.divider {
+  margin: 20px;
+  position: relative;
+}
+
+.divider p {
+  display: inline-block;
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  color: #666;
+}
+
+/*before allows us insert content before main content for decoration mainly*/
+.divider::before {
+  content: '';
+  /*To do the line before the sentence*/
+  position: absolute;
+  top: 50%;
+  /*aligns vertic to the middle of element and takes 50% of parent*/
+  left: 0;
+  /*starting line is left of the edge of the parent element*/
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+/* Social Media Icons */
+.social-login a {
+  margin: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-login a:hover {
+  transform: translateY(-3px);
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+  }
+
+  nav ul li {
+    margin: 0 0.5rem;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  .menu-grid,
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+
+  .location-info {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer nav {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+  }
+
+  nav ul li {
+    margin: 0.25rem 0.5rem;
+  }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"
+             />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo"><i class="fa-solid fa-utensils fa-flip"></i> Delicious Bites</h1>
+        <nav class="nav-container">
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categoryv1.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservations.html" class="Reservation-Button">Reservation</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span class="quantity">2</span></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart_page_area">
+        <br><br><br><br><br><br>
+        <div class="container">
+
+
+            <div class="top cart">
+                <h3>Shopping Cart</h3>
+                <div class="table cart_box">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Preview</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="Item 1">
+                                <td class="Item 1 img">
+                                    <img src="pictures/OrangeJuice.jpg" alt="Orange Juice" title="OrangeJuice">
+                                </td>
+                                <td class="Item 1 name">
+
+                                    <p><b>OrangeJuice</b></p>
+
+                                </td>
+                                <td class="Item 1 price">
+                                    <p>£8.00</p>
+                                </td>
+                                <td class="Item 1 quantity">
+                                    <div class="quantity-bg">
+                                        <input type="text" class="quantity-txt" value="2" readonly="">
+                                    </div>
+                                </td>
+                                <td class="Item 1 total">
+                                    <p>£16.00</p>
+                                </td>
+                                <td class="Item status">
+                                    <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                                </td>
+                            </tr>
+                            <tr class="Item 2">
+                                <td class="Item 2 img">
+                                    <img src="pictures/breakfast/Blueberry Oatmeal.png" alt="Blueberry Oatmeal"
+                                        title="Blueberry Oatmeal">
+                                </td>
+                                <td class="Item 2 name">
+
+                                    <p><b>Blueberry Oatmeal</b></p>
+
+                                </td>
+                                <td class="Item 2 price">
+                                    <p>£10.00</p>
+                                </td>
+                                <td class="Item 2 quantity">
+                                    <div class="quantity-bg">
+                                        <input type="text" class="quantity-txt" value="1" readonly="">
+                                    </div>
+                                </td>
+                                <td class="Item 2 Total">
+                                    <p>£10.00</p>
+                                </td>
+                                <td class="Item status">
+                                    <i class="fa-solid fa-check" style="color: #63E6BE;"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="cart-btns">
+                <a href="#" class="btn">Clear Cart</a>
+                <a href="#" class="btn">Update Cart</a>
+            </div>
+
+            <br><br>
+            <div class="bottom cart">
+                <div class="order-summary">
+                    <h3>Order Summury</h3>
+                    <div class="summary">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Cart Subtotal</td>
+                                    <td>£26.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping and Delivery</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr class="total-price">
+                                    <td>Order Total</td>
+                                    <td>£26.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="checkout-action">
+                    <a href="#" class="btn">Proceed to checkout <span></span></a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </section>
+    <!-- Cart Page End -->
+
+    <footer>
+        <!-- Top Section with 3 Columns -->
+        <div class="footer-top">
+            <!-- First Column -->
+            <div class="footer-column">
+                <h3>Customer</h3>
+                <ul>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">Meet Our Chefs</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Second Column -->
+            <div class="footer-column center-column">
+                <img src="pictures/DB2.jpg" alt="Delicious Bites Logo" class="footer-logo" title="Delicious Bites">
+                <p>BN. 2 - Mehwar Road beside Circus, October</p>
+                <p>Giza, Egypt</p>
+                <p>Hotline: <strong>19999 – 01234456781</strong></p>
+                <p>Email: <a href="DeliciousBites@example.com">info@example.com</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="color: #0079d6;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="color:red"></i></a>
+                    <a href="https://x.com/"><i class="fa fa-twitter" style="color:black"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest" style="color:red"></i></a>
+                </div>
+            </div>
+
+            <!-- Third Column -->
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Sunday - Thursday: <strong>09:00 – 22:00h</strong></li>
+                    <li>Saturday: <strong>09:00 – 20:00h</strong></li>
+                    <li>Friday: <strong>13:00 – 23:00h</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 Delicious Bites. All Rights Are Reserved. <a href="cart.html" class="scroll-btn"><i
+                        class="fa-solid fa-up-long fa-lg" style="color: #FFFFFF;"></i></a></p>
+        </div>
+    </footer>
+
+</body>

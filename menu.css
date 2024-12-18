@@ -1,0 +1,79 @@
+.photoright {
+  float: right;
+  width: 50%;
+  height: 100%;
+  padding-right: 4%;
+  mix-blend-mode: multiply;
+  /* This blends the image background with container color */
+
+}
+
+.popular_dishes_photo_pos_center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  background-color: #A18157;
+}
+
+.discription-about-plate {
+  padding-top: 1.5%;
+  padding-left: 3%;
+
+}
+
+.imagetransperantbg {
+  mix-blend-mode: multiply;
+  /* This blends the image background with container color */
+
+}
+
+
+.main {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: black;
+}
+
+
+table {
+  /* border-spacing:75px;*/
+  /*border: 1px solid black;*/
+
+  border-collapse: collapse;
+}
+
+td {
+
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.categories-fonts {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px
+}
+
+.price-font {
+  font-weight: normal;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px
+}
+
+.name-of-meal-font {
+
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/*define the font to proser to used it latter*/
+@font-face {
+  font-family: myfont;
+  /*i named the font myfont*/
+  src: url(notspego.ttf);
+
+}

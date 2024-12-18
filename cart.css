@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf2;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Cart Table Section */
+.top-cart {
+    /*first table*/
+    background-color: #fff8eb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0e6d6;
+}
+
+.table th {
+    /*Table header titles*/
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.table td img {
+    max-width: 80px;
+    border-radius: 10px;
+}
+
+.quantity-bg {
+    /*bg of the quantity*/
+    align-items: center;
+    justify-content: center;
+    background-color: #fef3dc;
+    border-radius: 50px;
+}
+
+.quantity-txt {
+    /*Inside text of the quantity*/
+    width: 30px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Cart Action Icons */
+.cart-close i {
+    color: #d9534f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cart-close i:hover {
+    color: #c9302c;
+}
+
+/* Clear Cart and Update Cart Buttons */
+.cart-btns {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+
+/* Order Summary Section */
+.order-summary {
+    background-color: #fff8eb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.order-summary h3 {
+    margin-bottom: 15px;
+}
+
+.summary table {
+    width: 100%;
+}
+
+.summary td {
+    padding: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.summary td:last-child {
+    text-align: right;
+}
+
+.checkout-action {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.total-price td {
+    padding: 0.5rem;
+    border-top: 2px solid #ccc;
+}

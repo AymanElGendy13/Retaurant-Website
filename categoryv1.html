@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category Page-Delicious Bites Restaurant</title>
+
+  <link rel="stylesheet" href="headerfooter.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"      />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    table {
+      width: 70%;
+      table-layout: fixed;
+      /* columns are the same width */
+      border-collapse: collapse;
+      /* Makes the borders collapse into a single border */
+      margin-bottom: 75px;
+    }
+
+    td {
+      padding: 20px;
+      /* Adds space inside the cells */
+      text-align: center;
+      height: auto;
+      /* Ensures all rows have the same height */
+    }
+
+    td div p {
+      text-align: justify;
+      text-justify: inter-word;
+      /*Adjust spaces between words*/
+      text-align: center;
+    }
+
+    td img {
+      padding-top: 25px;
+      /*space between head and img*/
+      text-align: center;
+      width: 220px;
+      height: 250px;
+
+    }
+
+    @media screen and (max-width:1067px) {
+
+      img {
+        padding-top: 80px;
+        text-align: center;
+        width: 150px;
+        height: 250px;
+      }
+
+    }
+
+    @media screen and (min-width: 676px) and (max-width: 939px) {
+
+      img {
+
+        text-align: center;
+        width: 150px;
+        height: 300px;
+
+      }
+
+      .price-font {
+        text-align: justify;
+        text-justify: inter-word;
+        /*Adjust spaces between words*/
+        font-size: 10px
+      }
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><i class="fa-solid fa-utensils fa-flip"></i> Delicious Bites</h1>
+    <nav class="nav-container">
+      <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservations.html" class="Reservation-Button">Reservation</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span class="quantity">2</span></a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <center>
+      <p class="categories-fonts" style="padding-top:120px;">Category Menu</p>
+    </center>
+    </tr>
+    <!--breakfastimage-->
+    <center>
+      <table>
+
+        <tr>
+          <td>
+            <img src="pictures\breakfast\Egyptian Breakfast.png" style="border-radius: 15%;" alt="b3breakfastimage"
+              usemap="#b3imageid">
+
+            <map name="b3imageid">
+              <area shape="Rect" coords=" 9,2,438,618 " href="breakfastv1.html" target="_self">
+            </map>
+          </td>
+
+          <!--mealimage-->
+
+          <td>
+            <img src="pictures\meals\chicken alfredo.png" style="border-radius: 15%;" alt="beef33image"
+              usemap="#mealimageid">
+
+            <map name="mealimageid">
+              <area shape="Rect" coords=" 7,13,450,638" href="mealsv1.html" target="_self">
+            </map>
+          </td>
+          <!--dessertimage-->
+
+          <td>
+            <img src="pictures\desserts\Chocolate Tiramisu.png" style="border-radius: 15%;"
+              alt="Chocolate Tiramisu.pngimage" usemap="#dessertimageid">
+
+            <map name="dessertimageid">
+              <area shape="Rect" coords="3,5,443,652 " href="dessert2.html" target="_self">
+            </map>
+          </td>
+          <!--drinksimage-->
+          <td>
+            <img src="pictures\drinks\d.jpg" style="border-radius: 15%;" alt="drinksimage" usemap="#dimageid">
+
+            <map name="dimageid">
+              <area shape="Rect" coords="17,38,571,511" href="Beveragesv1.html" target="_self">
+            </map>
+          </td>
+
+        <tr>
+          <td>
+            <p class="name-of-meal-font"><a href="breakfastv1.html" class="btn">Breakfast</a></p>
+          </td>
+          <td>
+            <p class="name-of-meal-font"><a href="mealsv1.html" class="btn">Meals</a></p>
+          </td>
+          <td>
+            <p class="name-of-meal-font"><a href="dessert2.html" class="btn">Desserts</a></p>
+          </td>
+          </td>
+          <td>
+            <p class="name-of-meal-font"><a href="Beveragesv1.html" class="btn">Beverages</a></p>
+          </td>
+        </tr>
+
+      </table>
+
+
+    </center>
+
+  </main>
+
+  <footer>
+    <!-- Top Section with 3 Colums -->
+    <div class="footer-top">
+      <!-- First Column -->
+      <div class="footer-column">
+        <h3>Customer</h3>
+        <ul>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="about.html">Meet Our Chefs</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Second Column -->
+      <div class="footer-column center-column">
+        <img src="pictures/DB2.jpg" alt="Delicious Bites Logo" class="footer-logo" style="height: 150px;"
+          title="Delicious Bites">
+        <p>BN. 2 - Mehwar Road beside Circus, October</p>
+        <p>Giza, Egypt</p>
+        <p>Hotline: <strong>19999 – 01234456781</strong></p>
+        <p>Email: <a href="DeliciousBites@example.com">info@deliciousbites.com</a></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="color: #0079d6;"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="color:red"></i></a>
+          <a href="https://x.com/"><i class="fa fa-twitter" style="color:black"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa fa-pinterest" style="color:red"></i></a>
+        </div>
+      </div>
+
+      <!-- Third Column -->
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Sunday - Thursday: <strong>09:00AM – 10:00PM</strong></li>
+          <li>Saturday: <strong>09:00AM – 11:00PM</strong></li>
+          <li>Friday: <strong>1:00PM – 12:00AM</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2024 Delicious Bites. All Rights Are Reserved. <a href="categoryv1.html" class="scroll-btn"><i
+            class="fa-solid fa-up-long fa-lg" style="color: #FFFFFF;"></i></a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
